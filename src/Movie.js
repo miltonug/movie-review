@@ -10,6 +10,7 @@ const Movie = ({ movie, handleSubmit }) => {
       <img src={movie.imageUrl} alt={movie.title} width={300} height={350} />
       <p>{movie.synopsis}</p>
       <Stars rating={movie.rating} />
+{/* reviews still not showing up in the app. Still working on this to figure out why :-( */}
       <ReviewList reviews={movie.reviews} />
       <ReviewForm movie={movie} handleSubmit={handleSubmit} />
     </div>
